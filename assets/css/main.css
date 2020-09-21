@@ -128,7 +128,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-	content: '';
+	content: "";
 	content: none;
 }
 
@@ -199,7 +199,7 @@ input,
 select,
 textarea {
 	color: #6e6e6e;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: "Source Sans Pro", sans-serif;
 	font-size: 16pt;
 	font-weight: 400;
 	line-height: 1.75em;
@@ -207,7 +207,8 @@ textarea {
 
 a {
 	-moz-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-	-webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+	-webkit-transition: color 0.2s ease-in-out,
+		border-bottom-color 0.2s ease-in-out;
 	-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 	transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 	border-bottom: dotted 1px;
@@ -297,7 +298,6 @@ blockquote {
 	padding: 1em 0 1em 2em;
 }
 
-
 .fa-laptop-code {
 	position: absolute;
 	margin-top: 25%;
@@ -317,7 +317,6 @@ blockquote {
 }
 
 @media screen and (max-width: 1280px) {
-
 	.container {
 		width: 48em;
 	}
@@ -325,11 +324,9 @@ blockquote {
 	.container.medium {
 		width: 36em;
 	}
-
 }
 
 @media screen and (max-width: 980px) {
-
 	.container {
 		width: 95%;
 	}
@@ -337,23 +334,42 @@ blockquote {
 	.container.medium {
 		width: 71.25%;
 	}
-
 }
 
 @media screen and (max-width: 840px) {
-
 	.container {
 		width: 95% !important;
 	}
-
 }
 
 @media screen and (max-width: 736px) {
-
 	.container {
 		width: 90% !important;
 	}
 
+	#header {
+		height: 90vh;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+	}
+
+	#header h1 {
+		font-size: 30px !important;
+	}
+
+	#header .logo {
+		font-size: 2.45em;
+		height: 5.55rem !important;
+		width: 5.55rem !important;
+		line-height: 2.35em;
+	}
+
+	.fa-laptop-code {
+		font-size: 40px;
+		left: 24% !important;
+	}
 }
 
 @media screen and (max-width: 480px) {
@@ -361,7 +377,6 @@ blockquote {
 	.container {
 		width: 100% !important;
 	}
-
 }
 
 /* Row */
@@ -608,7 +623,6 @@ blockquote {
 }
 
 @media screen and (max-width: 1680px) {
-
 	.row {
 		display: flex;
 		flex-wrap: wrap;
@@ -849,11 +863,9 @@ blockquote {
 	.row.gtr-200.gtr-uniform>* {
 		padding-top: 60px;
 	}
-
 }
 
 @media screen and (max-width: 1280px) {
-
 	.row {
 		display: flex;
 		flex-wrap: wrap;
@@ -1094,11 +1106,9 @@ blockquote {
 	.row.gtr-200.gtr-uniform>* {
 		padding-top: 60px;
 	}
-
 }
 
 @media screen and (max-width: 980px) {
-
 	.row {
 		display: flex;
 		flex-wrap: wrap;
@@ -1339,11 +1349,9 @@ blockquote {
 	.row.gtr-200.gtr-uniform>* {
 		padding-top: 60px;
 	}
-
 }
 
 @media screen and (max-width: 840px) {
-
 	.row {
 		display: flex;
 		flex-wrap: wrap;
@@ -1584,11 +1592,9 @@ blockquote {
 	.row.gtr-200.gtr-uniform>* {
 		padding-top: 40px;
 	}
-
 }
 
 @media screen and (max-width: 736px) {
-
 	.row {
 		display: flex;
 		flex-wrap: wrap;
@@ -1829,11 +1835,9 @@ blockquote {
 	.row.gtr-200.gtr-uniform>* {
 		padding-top: 40px;
 	}
-
 }
 
 @media screen and (max-width: 480px) {
-
 	.row {
 		display: flex;
 		flex-wrap: wrap;
@@ -2074,7 +2078,6 @@ blockquote {
 	.row.gtr-200.gtr-uniform>* {
 		padding-top: 40px;
 	}
-
 }
 
 /* Section/Article */
@@ -2109,7 +2112,7 @@ header.major {
 header.major:before,
 header.major:after {
 	background: rgba(224, 224, 224, 0.75);
-	content: '';
+	content: "";
 	display: block;
 	height: 1px;
 	left: 0;
@@ -2170,7 +2173,7 @@ footer.major {
 footer.major:before,
 footer.major:after {
 	background: rgba(224, 224, 224, 0.75);
-	content: '';
+	content: "";
 	display: block;
 	height: 1px;
 	left: 0;
@@ -2303,7 +2306,7 @@ textarea {
 	-ms-transition: opacity 0.25s ease-in-out;
 	transition: opacity 0.25s ease-in-out;
 	background-image: url("images/overlay.png");
-	content: '';
+	content: "";
 	display: block;
 	height: 100%;
 	left: 0;
@@ -2345,7 +2348,8 @@ textarea {
 
 .image.icon:before {
 	-moz-transition: -moz-transform 0.1s ease-in-out, font-size 0.1s ease-in-out;
-	-webkit-transition: -webkit-transform 0.1s ease-in-out, font-size 0.1s ease-in-out;
+	-webkit-transition: -webkit-transform 0.1s ease-in-out,
+		font-size 0.1s ease-in-out;
 	-ms-transition: -ms-transform 0.1s ease-in-out, font-size 0.1s ease-in-out;
 	transition: transform 0.1s ease-in-out, font-size 0.1s ease-in-out;
 	color: #fff;
@@ -2393,7 +2397,7 @@ span.image.icon {
 	text-rendering: auto;
 	line-height: 1;
 	text-transform: none !important;
-	font-family: 'Font Awesome 5 Free';
+	font-family: "Font Awesome 5 Free";
 	font-weight: 400;
 }
 
@@ -2410,7 +2414,7 @@ span.image.icon {
 }
 
 .icon.brands:before {
-	font-family: 'Font Awesome 5 Brands';
+	font-family: "Font Awesome 5 Brands";
 }
 
 /* List */
@@ -2509,7 +2513,6 @@ ul.actions:last-child {
 }
 
 @media screen and (max-width: 736px) {
-
 	ul.actions:not(.fixed) {
 		-moz-flex-direction: column;
 		-webkit-flex-direction: column;
@@ -2556,7 +2559,6 @@ ul.actions:last-child {
 	ul.actions:not(.fixed) li .button.icon:before {
 		margin-left: -0.5em;
 	}
-
 }
 
 /* Icons */
@@ -2744,7 +2746,7 @@ input[type="button"].small,
 
 .feature:after {
 	clear: both;
-	content: '';
+	content: "";
 	display: block;
 }
 
@@ -2772,7 +2774,7 @@ input[type="button"].small,
 
 .feature:before {
 	background: blue;
-	content: '';
+	content: "";
 	display: inline-block;
 	height: 100%;
 	vertical-align: middle;
@@ -2835,7 +2837,8 @@ input[type="button"].small,
 
 #header {
 	background-attachment: scroll, scroll, fixed;
-	background-image: url("images/top-3200.svg"), url("images/overlay.png"), url("../../images/hero-image.jpg");
+	background-image: url("images/top-3200.svg"), url("images/overlay.png"),
+		url("../../images/hero-image.jpg");
 	background-position: bottom center, top left, center center;
 	background-repeat: repeat-x, repeat, no-repeat;
 	background-size: 3200px 460px, auto, cover;
@@ -2848,7 +2851,7 @@ input[type="button"].small,
 #header:before,
 #header:after {
 	background: rgba(224, 224, 224, 0.75);
-	content: '';
+	content: "";
 	left: 50%;
 	position: absolute;
 	width: 1px;
@@ -2906,10 +2909,10 @@ input[type="button"].small,
 	display: inline-block;
 	font-size: 2.25em;
 	height: 2.35em;
+	width: 2.35em;
 	line-height: 2.35em;
 	margin: 0 0 0.75em 0;
 	text-align: center;
-	width: 2.35em;
 }
 
 #header .logo.fa-paper-plane-o:before {
@@ -2952,7 +2955,7 @@ input[type="button"].small,
 
 #footer:before {
 	background: rgba(224, 224, 224, 0.75);
-	content: '';
+	content: "";
 	height: calc(460px + 6em);
 	left: 50%;
 	position: absolute;
@@ -3056,7 +3059,7 @@ input[type="button"].small,
 
 #main:before {
 	background: rgba(224, 224, 224, 0.75);
-	content: '';
+	content: "";
 	height: 100%;
 	left: 50%;
 	position: absolute;
@@ -3073,7 +3076,6 @@ input[type="button"].small,
 /* Wide */
 
 @media screen and (max-width: 1680px) {
-
 	/* Basic */
 
 	body,
@@ -3111,13 +3113,11 @@ input[type="button"].small,
 		font-size: 1.25em;
 		line-height: 1.65em;
 	}
-
 }
 
 /* Normal */
 
 @media screen and (max-width: 1280px) {
-
 	/* Basic */
 
 	body,
@@ -3172,7 +3172,8 @@ input[type="button"].small,
 
 	#header {
 		background-attachment: scroll, scroll, scroll;
-		background-image: url("images/top-1600.svg"), url("images/overlay.png"), url("../../images/hero-image.jpg");
+		background-image: url("images/top-1600.svg"), url("images/overlay.png"),
+			url("../../images/hero-image.jpg");
 		background-size: 1600px 230px, auto, cover;
 		padding: 6em 0 12em 0;
 	}
@@ -3211,13 +3212,11 @@ input[type="button"].small,
 	#main {
 		padding: 4em 0 3em 0;
 	}
-
 }
 
 /* Narrow */
 
 @media screen and (max-width: 980px) {
-
 	/* Basic */
 
 	body,
@@ -3226,13 +3225,11 @@ input[type="button"].small,
 	textarea {
 		font-size: 12pt;
 	}
-
 }
 
 /* Narrower */
 
 @media screen and (max-width: 840px) {
-
 	/* Section/Article */
 
 	header.major {
@@ -3244,13 +3241,11 @@ input[type="button"].small,
 		padding-left: 2em;
 		padding-right: 2em;
 	}
-
 }
 
 /* Mobile */
 
 @media screen and (max-width: 736px) {
-
 	/* Basic */
 
 	h2 {
@@ -3328,7 +3323,8 @@ input[type="button"].small,
 	/* Header */
 
 	#header {
-		background-image: url("images/top-1280.svg"), url("images/overlay.png"), url("../../images/hero-image.jpg");
+		background-image: url("images/top-1280.svg"), url("images/overlay.png"),
+			url("../../images/hero-image.jpg");
 		background-size: 1280px 184px, auto, cover;
 		padding: 3em 0 7em 0;
 	}
@@ -3375,13 +3371,11 @@ input[type="button"].small,
 	#main {
 		padding: 2em 0 2em 0;
 	}
-
 }
 
 /* Mobile (Portrait) */
 
 @media screen and (max-width: 480px) {
-
 	/* Section/Article */
 
 	header.major {
@@ -3452,5 +3446,4 @@ input[type="button"].small,
 	#header br {
 		display: none;
 	}
-
 }
