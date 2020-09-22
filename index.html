@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Frontend developer</title>
+  <title>Kahric Tarik the Frontend developer you need</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <meta name="description" content="Testing testing" />
@@ -61,8 +61,10 @@
   <!-- Header -->
   <div id="header">
     <span class="logo icon"><i class="fas fa-laptop-code"></i></span>
-    <h1>Hi. I am Tarik</h1>
-    <p>And I am backend developer!</p>
+    <h1>Hi! I am Tarik</h1>
+    <p>And I am <b>frontend developer</b> with goal of becoming a <b>fullstack</b>.</p>
+    <button class="hero-button" id="btn1"><a href="#"></a>Take a look at my <b>projects</b>!</a></button>
+
   </div>
 
   <!-- Main -->
@@ -303,7 +305,7 @@
           <a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a>
         </li>
         <li>
-          <a href="#" class="icon brands far fa-envelope-open"><span class="label">E-mail</span></a>
+          <a href="#" class="icon brands fa-envelope-open"><span class="label">E-mail</span></a>
         </li>
       </ul>
     </div>
@@ -315,6 +317,44 @@
   <script src="assets/js/breakpoints.min.js"></script>
   <script src="assets/js/util.js"></script>
   <script src="assets/js/main.js"></script>
+  <!-- JQuery CDN -->
+  <script>
+    $('a[href*="#"]')
+      // Remove links that don't actually link to anything
+      .not('[href="#"]')
+      .not('[href="#0"]')
+      .click(function (event) {
+        // On-page links
+        if (
+          location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+          location.hostname == this.hostname
+        ) {
+          // Figure out element to scroll to
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+          // Does a scroll target exist?
+          if (target.length) {
+            // Only prevent default if animation is actually gonna happen
+            event.preventDefault();
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 1000, function () {
+              // Callback after animation
+              // Must change focus!
+              var $target = $(target);
+              $target.focus();
+              if ($target.is(":focus")) { // Checking if the target was focused
+                return false;
+              } else {
+                $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                $target.focus(); // Set focus again
+              };
+            });
+          }
+        }
+      });
+  </script>
+
 </body>
 
 </html>
