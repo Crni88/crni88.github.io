@@ -317,17 +317,39 @@ blockquote {
 	padding-bottom: 2%;
 }
 
-.hero-button {
+/*Buttons */
+.button {
 	outline: none;
 	border: none;
 	margin-top: 2%;
 	padding: 1% 1%;
-	background: #4eb980 !important;
-	color: #fff !important;
 	border-radius: 5px;
 	font-size: 15px;
 	cursor: pointer;
 	text-transform: none !important;
+	color: #fff !important;
+}
+
+.hero-button {
+	background: #4eb980 !important;
+}
+
+.code-button {
+	background: #4eb980 !important;
+
+}
+
+.code-button:hover {
+	background: #3d9466 !important;
+}
+
+.project-button {
+	background: #6649b8 !important;
+}
+
+.project-button:hover {
+	background: #50398f !important;
+
 }
 
 @media screen and (max-width: 1280px) {
@@ -2354,6 +2376,7 @@ textarea {
 .image.feature img {
 	display: block;
 	width: 100%;
+
 }
 
 .image.icon {
@@ -2758,8 +2781,9 @@ input[type="button"].small,
 
 .feature {
 	position: relative;
-	height: 20em;
+	height: 25em;
 }
+
 
 .feature:after {
 	clear: both;
@@ -2772,6 +2796,7 @@ input[type="button"].small,
 .feature h5,
 .feature h6 {
 	text-align: inherit;
+	color: #544d55;
 }
 
 .feature .image {
@@ -2787,6 +2812,12 @@ input[type="button"].small,
 	min-height: 100%;
 	min-width: 100%;
 	position: absolute;
+	object-fit: cover !important;
+}
+
+.feature img:hover {
+	transform: scale(1.1);
+	transition: 600ms;
 }
 
 .feature:before {
@@ -2806,10 +2837,6 @@ input[type="button"].small,
 
 .feature .content h3 {
 	margin-bottom: 0.5em;
-}
-
-.feature .content :last-child {
-	margin: 0;
 }
 
 .feature.left {
@@ -3072,6 +3099,7 @@ input[type="button"].small,
 	padding: 6em 0 5em 0;
 	position: relative;
 	z-index: 1;
+	margin-top: -1em !important;
 }
 
 #main:before {
