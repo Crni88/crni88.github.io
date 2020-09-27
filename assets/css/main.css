@@ -3102,6 +3102,10 @@ input[type="button"].small,
 	margin-top: -1em !important;
 }
 
+#main h2 {
+	color: #50398f !important;
+}
+
 #main:before {
 	background: rgba(224, 224, 224, 0.75);
 	content: "";
@@ -3131,7 +3135,7 @@ input[type="button"].small,
 	}
 
 	h2 {
-		font-size: 1.5em;
+		font-size: 1.6em;
 	}
 
 	h3 {
