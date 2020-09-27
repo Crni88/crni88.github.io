@@ -336,7 +336,6 @@ blockquote {
 
 .code-button {
 	background: #4eb980 !important;
-
 }
 
 .code-button:hover {
@@ -349,7 +348,6 @@ blockquote {
 
 .project-button:hover {
 	background: #50398f !important;
-
 }
 
 @media screen and (max-width: 1280px) {
@@ -2376,7 +2374,6 @@ textarea {
 .image.feature img {
 	display: block;
 	width: 100%;
-
 }
 
 .image.icon {
@@ -2784,7 +2781,6 @@ input[type="button"].small,
 	height: 25em;
 }
 
-
 .feature:after {
 	clear: both;
 	content: "";
@@ -3099,10 +3095,6 @@ input[type="button"].small,
 	position: relative;
 	z-index: 1;
 	margin-top: -1em !important;
-}
-
-#main h2 {
-	color: #50398f !important;
 }
 
 #main:before {
@@ -3470,7 +3462,6 @@ input[type="button"].small,
 	/* Footer */
 
 	#footer {
-		margin-top: -100px;
 		padding-left: 1em;
 		padding-right: 1em;
 	}
@@ -3517,13 +3508,12 @@ ul.feature-icons li {
 	width: 50%;
 }
 
-
 ul.feature-icons li:before {
 	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' viewBox='0 0 512 512'%3E%3Cpath d='M256,0l221.7,128v256L256,512L34.3,384V128L256,0z' fill='rgba(144, 144, 144, 0.1)' /%3E%3C/svg%3E");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
-	color: #4eb980;
+	color: #6649b8;
 	display: block;
 	font-size: 1.75rem;
 	height: 3.25rem;
@@ -3541,7 +3531,6 @@ ul.feature-icons li:nth-child(2) {
 }
 
 @media screen and (max-width: 736px) {
-
 	ul.feature-icons {
 		margin: 0 0 3rem 25%;
 	}
@@ -3553,5 +3542,4 @@ ul.feature-icons li:nth-child(2) {
 	ul.feature-icons li:nth-child(2) {
 		margin-top: 2rem;
 	}
-
 }
