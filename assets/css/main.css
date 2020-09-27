@@ -3513,7 +3513,7 @@ ul.feature-icons li:before {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
-	color: #6649b8;
+	color: #6649b8 !important;
 	display: block;
 	font-size: 1.75rem;
 	height: 3.25rem;
