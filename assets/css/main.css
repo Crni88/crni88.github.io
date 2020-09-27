@@ -2991,7 +2991,6 @@ input[type="button"].small,
 				and a negative margin (to move everything up a bit).
 			*/
 
-	margin-top: -260px;
 	padding: calc(460px + 6em) 0 10em 0;
 	position: relative;
 	text-align: center;
@@ -3248,7 +3247,6 @@ input[type="button"].small,
 	#footer {
 		background-image: url("images/bottom-1600.svg");
 		background-size: 1600px 230px;
-		margin-top: -100px;
 		padding: calc(230px + 4em) 0 6em 0;
 	}
 
@@ -3403,7 +3401,6 @@ input[type="button"].small,
 	#footer {
 		background-image: url("images/bottom-1280.svg");
 		background-size: 1280px 184px;
-		margin-top: -75px;
 		padding: calc(184px + 2em) 0 2em 0;
 	}
 
@@ -3495,4 +3492,66 @@ input[type="button"].small,
 	#header br {
 		display: none;
 	}
+}
+
+/* Feature Icons */
+
+ul.feature-icons {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	list-style: none;
+	align-items: center;
+	justify-content: center;
+	margin-left: 10%;
+}
+
+ul.feature-icons:first-child {
+	margin-top: 0;
+}
+
+ul.feature-icons li {
+	margin: 2.5rem 0 0 0;
+	padding: 0.5rem 0 0 4.5rem;
+	position: relative;
+	width: 50%;
+}
+
+
+ul.feature-icons li:before {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' viewBox='0 0 512 512'%3E%3Cpath d='M256,0l221.7,128v256L256,512L34.3,384V128L256,0z' fill='rgba(144, 144, 144, 0.1)' /%3E%3C/svg%3E");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	color: #4eb980;
+	display: block;
+	font-size: 1.75rem;
+	height: 3.25rem;
+	left: 0;
+	line-height: 3.25rem;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	width: 3.25rem;
+}
+
+ul.feature-icons li:nth-child(1),
+ul.feature-icons li:nth-child(2) {
+	margin-top: 0;
+}
+
+@media screen and (max-width: 736px) {
+
+	ul.feature-icons {
+		margin: 0 0 3rem 25%;
+	}
+
+	ul.feature-icons li {
+		width: 100%;
+	}
+
+	ul.feature-icons li:nth-child(2) {
+		margin-top: 2rem;
+	}
+
 }
